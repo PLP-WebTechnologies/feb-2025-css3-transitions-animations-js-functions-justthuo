@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Flight Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to AfriTrans Airlines</h1>
+    <button id="themeToggle" onclick="toggleTheme()">Toggle Dark Mode</button>
+  </header>
+
+  <!-- Flight Cards -->
+  <section id="flights">
+    <div class="flight-card" onclick="animateCard(this)">
+      <img src="https://via.placeholder.com/300x200" alt="Flight 1">
+      <h3>Flight to New York</h3>
+      <p>Departure: 10:00 AM | Arrival: 2:00 PM</p>
+      <p>Price: $500</p>
+    </div>
+
+    <div class="flight-card" onclick="animateCard(this)">
+      <img src="https://via.placeholder.com/300x200" alt="Flight 2">
+      <h3>Flight to London</h3>
+      <p>Departure: 11:00 AM | Arrival: 3:00 PM</p>
+      <p>Price: $600</p>
+    </div>
+
+    <div class="flight-card" onclick="animateCard(this)">
+      <img src="https://via.placeholder.com/300x200" alt="Flight 3">
+      <h3>Flight to Paris</h3>
+      <p>Departure: 12:00 PM | Arrival: 4:00 PM</p>
+      <p>Price: $700</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
